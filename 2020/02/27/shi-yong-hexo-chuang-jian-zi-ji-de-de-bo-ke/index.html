@@ -4,8 +4,18 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Jquery——ajax实现异步更新, Zachary">
-    <meta name="description" content="Ajax 简介Ajax 即“Asynchronous Javascript And XML”（异步 JavaScript 和 XML），是指一种创建交互式、快速动态网页应用的网页开发技术，无需重新加载整个网页的情况下，能够更新部分网页的技术">
+    <meta name="keywords" content="使用hexo创建自己的的博客, Zachary">
+    <meta name="description" content="什么是hexo?
+hexo 是快速、简洁且高效的博客框架,能够快速搭建博客.
+
+官网: hexo
+安装hexo安装hexo是非常快速的.
+安装前提
+Node.js
+Git  
+
+直接在官网下载最新版本安装即可  
+安装完成后,打开cmd  ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +23,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Jquery——ajax实现异步更新 | Zachary</title>
+    <title>使用hexo创建自己的的博客 | Zachary</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -240,12 +250,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Jquery——ajax实现异步更新</h1>
+                    <h1 class="description center-align post-title">使用hexo创建自己的的博客</h1>
                 </div>
             </div>
         </div>
@@ -362,12 +372,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/ajax/">
-                                <span class="chip bg-color">ajax</span>
+                            <a href="/tags/hexo/">
+                                <span class="chip bg-color">hexo</span>
                             </a>
                         
-                            <a href="/tags/Jquery/">
-                                <span class="chip bg-color">Jquery</span>
+                            <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                                <span class="chip bg-color">博客</span>
                             </a>
                         
                     </div>
@@ -378,8 +388,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
-                                技术
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
+                                博客
                             </a>
                         
                     </div>
@@ -391,21 +401,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-25
+                    2020-02-27
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-02-26
+                    2020-02-27
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    321
+                    313
                 </div>
                 
 
@@ -428,37 +438,39 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Ajax-简介"><a href="#Ajax-简介" class="headerlink" title="Ajax 简介"></a>Ajax 简介</h2><p>Ajax 即“Asynchronous Javascript And XML”（异步 JavaScript 和 XML），是指一种创建交互式、快速动态网页应用的网页开发技术，无需重新加载整个网页的情况下，能够更新部分网页的技术。</p>
-<h2 id="使用-Ajax"><a href="#使用-Ajax" class="headerlink" title="使用 Ajax"></a>使用 Ajax</h2><p>在寒假的学习当中，项目<strong>Perfume</strong>之中的加入购物车功能就是使用ajax技术实现的</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">addItemToCart</span><span class="token punctuation">(</span>id<span class="token punctuation">,</span>number<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    $<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-      type<span class="token punctuation">:</span><span class="token string">"get"</span><span class="token punctuation">,</span>
-      url<span class="token punctuation">:</span><span class="token string">"CartServlet"</span><span class="token punctuation">,</span>
-      data<span class="token punctuation">:</span><span class="token punctuation">{</span>
-        <span class="token string">'id'</span><span class="token punctuation">:</span>id<span class="token punctuation">,</span>
-        <span class="token string">'action'</span><span class="token punctuation">:</span><span class="token string">'add'</span><span class="token punctuation">,</span>
-        <span class="token string">"number"</span><span class="token punctuation">:</span>number
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      success<span class="token punctuation">:</span><span class="token keyword">function</span> <span class="token punctuation">(</span>result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        toastr<span class="token punctuation">.</span><span class="token function">success</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-          location<span class="token punctuation">.</span><span class="token function">reload</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">1000</span><span class="token punctuation">)</span>
-
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span></code></pre>
-<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>我使用的是Jquery的ajax技术<br>其中：</p>
-<ol>
-<li>传输一些数据到CartServlet，在Servlet里面处理添加到购物车</li>
-<li>前台没有任何感受到改变，这就是异步请求的魅力</li>
-<li>处理完成，返回数据给前台，提示框提示是否添加购物车成功</li>
-</ol>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
-<li>使用ajax技术，前台可以在发送请求的同时，继续其他的任务，提高用户体验。</li>
-<li>可以进行局部更新，减少刷新页面带来的流量消费，同时提高了页面的响应速度。</li>
-</ol>
-<script>
+                <h2 id="什么是hexo"><a href="#什么是hexo" class="headerlink" title="什么是hexo?"></a>什么是hexo?</h2><blockquote>
+<p>hexo 是快速、简洁且高效的博客框架,能够快速搭建博客.</p>
+</blockquote>
+<p>官网: <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo</a></p>
+<h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><p>安装hexo是非常快速的.</p>
+<h3 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h3><ul>
+<li><a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></li>
+<li><a href="https://git-scm.com/" target="_blank" rel="noopener">Git</a>  </li>
+</ul>
+<p>直接在官网下载最新版本安装即可  </p>
+<p>安装完成后,打开cmd  </p>
+<pre><code>git --version
+node -v
+npm -v</code></pre><p>检查安装有没有成功</p>
+<h3 id="hexo"><a href="#hexo" class="headerlink" title="hexo"></a>hexo</h3><p>在Git 和 Node.js 安装完成后  </p>
+<p>右键打开Git Bash</p>
+<p>因为使用npm的下载速度不是很快,所以我们要修改为淘宝镜像  </p>
+<pre><code>npm install -g cnpm --registry=https://registry.npm.taobao.org</code></pre><p>使用<code>cnpm -v</code>验证安装是否成功  </p>
+<p>然后安装hexo</p>
+<pre><code>cnpm install -g hexo-cli</code></pre><p>依旧用<code>hexo -v</code>查看一下版本,环境安装就完成了</p>
+<h2 id="使用hexo"><a href="#使用hexo" class="headerlink" title="使用hexo"></a>使用hexo</h2><p>选择一个项目本地存放地址</p>
+<p>右键打开 Git Bash</p>
+<pre><code>hexo init myblog</code></pre><p><img src="/2020/02/27/shi-yong-hexo-chuang-jian-zi-ji-de-de-bo-ke/001.jpg" alt="">  </p>
+<p>稍等片刻,在目录中就会有一个myblog文件夹 ,进入myblog  </p>
+<p><img src="/2020/02/27/shi-yong-hexo-chuang-jian-zi-ji-de-de-bo-ke/002.jpg" alt=""></p>
+<p>继续在Git Bash上输入</p>
+<pre><code>cd myblog
+hexo g
+hexo server</code></pre><p><img src="/2020/02/27/shi-yong-hexo-chuang-jian-zi-ji-de-de-bo-ke/003.jpg" alt=""></p>
+<p>打开浏览器 输入 <strong><a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></strong></p>
+<p><img src="/2020/02/27/shi-yong-hexo-chuang-jian-zi-ji-de-de-bo-ke/004.jpg" alt=""></p>
+<p>基本的一个博客就搭建完成啦</p>
+<h2 id="未完待续………"><a href="#未完待续………" class="headerlink" title="未完待续………"></a>未完待续………</h2><script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
             if (!el.dataset.src) { return; }
@@ -501,7 +513,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zachary.asia/2020/02/25/jquery-ajax-shi-xian-yi-bu-geng-xin/">https://zachary.asia/2020/02/25/jquery-ajax-shi-xian-yi-bu-geng-xin/</a>
+                    <a href="https://zachary.asia/2020/02/27/shi-yong-hexo-chuang-jian-zi-ji-de-de-bo-ke/">https://zachary.asia/2020/02/27/shi-yong-hexo-chuang-jian-zi-ji-de-de-bo-ke/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -539,12 +551,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/ajax/">
-                                    <span class="chip bg-color">ajax</span>
+                                <a href="/tags/hexo/">
+                                    <span class="chip bg-color">hexo</span>
                                 </a>
                             
-                                <a href="/tags/Jquery/">
-                                    <span class="chip bg-color">Jquery</span>
+                                <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                                    <span class="chip bg-color">博客</span>
                                 </a>
                             
                         </div>
@@ -973,9 +985,74 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2020/02/27/shi-yong-hexo-chuang-jian-zi-ji-de-de-bo-ke/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="使用hexo创建自己的的博客">
+                        
+                        <span class="card-title">使用hexo创建自己的的博客</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            什么是hexo?
+hexo 是快速、简洁且高效的博客框架,能够快速搭建博客.
+
+官网: hexo
+安装hexo安装hexo是非常快速的.
+安装前提
+Node.js
+Git  
+
+直接在官网下载最新版本安装即可  
+安装完成后,打开cmd  
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-27
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
+                                    博客
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/hexo/">
+                        <span class="chip bg-color">hexo</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                        <span class="chip bg-color">博客</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2020/02/25/hello-world/">
                     <div class="card-image">
@@ -993,9 +1070,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-25
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-25
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1009,56 +1086,6 @@
                     
                     <a href="/tags/%E5%88%9D%E5%A7%8B%E5%8C%96/">
                         <span class="chip bg-color">初始化</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2020/02/25/git-de-jian-dan-shi-yong/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="git的简单使用">
-                        
-                        <span class="card-title">git的简单使用</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            什么是Git   Git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。 [1]  Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件
-安装Git
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-25
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
-                                    技术
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/Git/">
-                        <span class="chip bg-color">Git</span>
                     </a>
                     
                 </div>
