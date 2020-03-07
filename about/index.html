@@ -501,7 +501,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"笔记","value":1},{"name":"技术","value":2},{"name":"博客","value":1},{"name":"总结","value":1}],
+                data: [{"name":"笔记","value":1},{"name":"博客","value":1},{"name":"技术","value":2},{"name":"总结","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -525,7 +525,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["Chrome-DevTools","笔记","调试","ajax","Jquery","Git","hexo","博客","学习成果","页面展示"]
+                data: ["Chrome-DevTools","笔记","调试","hexo","博客","Git","ajax","Jquery","学习成果","页面展示"]
             }
         ],
         yAxis: [
@@ -724,14 +724,14 @@
             
             
             
-            <a href="/tags/ajax/">
-                <span class="chip center-align waves-effect waves-light chip-default">ajax</span>
+            <a href="/tags/hexo/">
+                <span class="chip center-align waves-effect waves-light chip-default">hexo</span>
             </a>
             
             
             
-            <a href="/tags/Jquery/">
-                <span class="chip center-align waves-effect waves-light chip-default">Jquery</span>
+            <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                <span class="chip center-align waves-effect waves-light chip-default">博客</span>
             </a>
             
             
@@ -742,14 +742,14 @@
             
             
             
-            <a href="/tags/hexo/">
-                <span class="chip center-align waves-effect waves-light chip-default">hexo</span>
+            <a href="/tags/ajax/">
+                <span class="chip center-align waves-effect waves-light chip-default">ajax</span>
             </a>
             
             
             
-            <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                <span class="chip center-align waves-effect waves-light chip-default">博客</span>
+            <a href="/tags/Jquery/">
+                <span class="chip center-align waves-effect waves-light chip-default">Jquery</span>
             </a>
             
             
@@ -998,6 +998,34 @@ $(function () {
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
+    
+        <script src="//code.tidio.co/i0ocorgtoeztpyvfwjyyt5xoaelimmw9.js"></script>
+        <script> 
+            $(document).ready(function () {
+                setInterval(change_Tidio, 50);  
+                function change_Tidio() { 
+                    var tidio=$("#tidio-chat iframe");
+                    if(tidio.css("display")=="block"&& $(window).width()>977 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" &&$(window).width()>977)>0? "-40px" : ($("div.toc-title").length&&$(window).width()>977)>0?"85px":"20px";   
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";   
+                        document.getElementById("tidio-chat-iframe").style.height=parseInt(tidio.css("height"))>=520?"520px":tidio.css("height");
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    } 
+                    else if(tidio.css("display")=="block"&&$(window).width()>601 &&$(window).width()<992 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && 601< $(window).width()<992)>0? "-40px":"20px" ;   
+                        document.getElementById("tidio-chat-iframe").style.right="-15px"; 
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))<230){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0? "-10px":"45px" ;   
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    if( tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))>=230){
+                        document.getElementById("tidio-chat-iframe").style.zIndex="998";
+                    }
+                } 
+            }); 
+        </script>
     
 
     

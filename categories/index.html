@@ -278,20 +278,20 @@
                 </a>
                 
                 
-                <a href="/categories/%E6%8A%80%E6%9C%AF/" title="技术: 2">
+                <a href="/categories/%E5%8D%9A%E5%AE%A2/" title="博客: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F5EEF8;">技术
-                        <span class="tag-length">2</span>
+                            style="background-color: #F5EEF8;">博客
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/%E5%8D%9A%E5%AE%A2/" title="博客: 1">
+                <a href="/categories/%E6%8A%80%E6%9C%AF/" title="技术: 2">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #D5F5E3;">博客
-                        <span class="tag-length">1</span>
+                            style="background-color: #D5F5E3;">技术
+                        <span class="tag-length">2</span>
                     </span>
                 </a>
                 
@@ -346,7 +346,7 @@
                     color: '#3C4858'
                 }
             },
-            indicator: [{"name":"笔记","max":3},{"name":"技术","max":3},{"name":"博客","max":3},{"name":"总结","max":3}],
+            indicator: [{"name":"笔记","max":3},{"name":"博客","max":3},{"name":"技术","max":3},{"name":"总结","max":3}],
             nameGap: 5,
             center: ['50%','55%'],
             radius: '66%'
@@ -357,7 +357,7 @@
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
             data : [
                 {
-                    value : [1,2,1,1],
+                    value : [1,1,2,1],
                     name : '文章分类数量'
                 }
             ]
@@ -548,6 +548,34 @@ $(function () {
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
     
 
+    
+        <script src="//code.tidio.co/i0ocorgtoeztpyvfwjyyt5xoaelimmw9.js"></script>
+        <script> 
+            $(document).ready(function () {
+                setInterval(change_Tidio, 50);  
+                function change_Tidio() { 
+                    var tidio=$("#tidio-chat iframe");
+                    if(tidio.css("display")=="block"&& $(window).width()>977 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" &&$(window).width()>977)>0? "-40px" : ($("div.toc-title").length&&$(window).width()>977)>0?"85px":"20px";   
+                        document.getElementById("tidio-chat-iframe").style.right="-15px";   
+                        document.getElementById("tidio-chat-iframe").style.height=parseInt(tidio.css("height"))>=520?"520px":tidio.css("height");
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    } 
+                    else if(tidio.css("display")=="block"&&$(window).width()>601 &&$(window).width()<992 ){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && 601< $(window).width()<992)>0? "-40px":"20px" ;   
+                        document.getElementById("tidio-chat-iframe").style.right="-15px"; 
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    else if(tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))<230){
+                        document.getElementById("tidio-chat-iframe").style.bottom= ($("div#backTop.top-scroll").css("display")=="none" && $(window).width()<601)>0? "-10px":"45px" ;   
+                        document.getElementById("tidio-chat-iframe").style.zIndex="997";
+                    }
+                    if( tidio.css("display")=="block"&&$(window).width()<601 && parseInt(tidio.css("height"))>=230){
+                        document.getElementById("tidio-chat-iframe").style.zIndex="998";
+                    }
+                } 
+            }); 
+        </script>
     
 
     
