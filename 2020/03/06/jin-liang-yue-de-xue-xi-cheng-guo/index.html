@@ -4,8 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Jquery——ajax实现异步更新, Zachary">
-    <meta name="description" content="Ajax 简介Ajax 即“Asynchronous Javascript And XML”（异步 JavaScript 和 XML），是指一种创建交互式、快速动态网页应用的网页开发技术，无需重新加载整个网页的情况下，能够更新部分网页的技术">
+    <meta name="keywords" content="近两月的学习成果, Zachary">
+    <meta name="description" content="前言因为疫情的原因,导致在家呆了两个月,也学习了两个月,在tomcat 的webapps目录下塞满了war包
+
+以下来介绍一下我的学习成果
+Perfume商店
+香水商店,经过一次一次的升级,有三个版本,是技术推进的结果.
+三个版本概述:
+
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +20,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Jquery——ajax实现异步更新 | Zachary</title>
+    <title>近两月的学习成果 | Zachary</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -196,12 +203,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Jquery——ajax实现异步更新</h1>
+                    <h1 class="description center-align post-title">近两月的学习成果</h1>
                 </div>
             </div>
         </div>
@@ -318,12 +325,12 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/ajax/">
-                                <span class="chip bg-color">ajax</span>
+                            <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%88%90%E6%9E%9C/">
+                                <span class="chip bg-color">学习成果</span>
                             </a>
                         
-                            <a href="/tags/Jquery/">
-                                <span class="chip bg-color">Jquery</span>
+                            <a href="/tags/%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%A4%BA/">
+                                <span class="chip bg-color">页面展示</span>
                             </a>
                         
                     </div>
@@ -334,8 +341,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
-                                技术
+                            <a href="/categories/%E6%80%BB%E7%BB%93/" class="post-category">
+                                总结
                             </a>
                         
                     </div>
@@ -347,7 +354,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-25
+                    2020-03-06
                 </div>
                 
 
@@ -361,14 +368,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    321
+                    516
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -384,36 +391,41 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Ajax-简介"><a href="#Ajax-简介" class="headerlink" title="Ajax 简介"></a>Ajax 简介</h2><p>Ajax 即“Asynchronous Javascript And XML”（异步 JavaScript 和 XML），是指一种创建交互式、快速动态网页应用的网页开发技术，无需重新加载整个网页的情况下，能够更新部分网页的技术。</p>
-<h2 id="使用-Ajax"><a href="#使用-Ajax" class="headerlink" title="使用 Ajax"></a>使用 Ajax</h2><p>在寒假的学习当中，项目<strong>Perfume</strong>之中的加入购物车功能就是使用ajax技术实现的</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">addItemToCart</span><span class="token punctuation">(</span>id<span class="token punctuation">,</span>number<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    $<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
-      type<span class="token punctuation">:</span><span class="token string">"get"</span><span class="token punctuation">,</span>
-      url<span class="token punctuation">:</span><span class="token string">"CartServlet"</span><span class="token punctuation">,</span>
-      data<span class="token punctuation">:</span><span class="token punctuation">{</span>
-        <span class="token string">'id'</span><span class="token punctuation">:</span>id<span class="token punctuation">,</span>
-        <span class="token string">'action'</span><span class="token punctuation">:</span><span class="token string">'add'</span><span class="token punctuation">,</span>
-        <span class="token string">"number"</span><span class="token punctuation">:</span>number
-      <span class="token punctuation">}</span><span class="token punctuation">,</span>
-      success<span class="token punctuation">:</span><span class="token keyword">function</span> <span class="token punctuation">(</span>result<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        toastr<span class="token punctuation">.</span><span class="token function">success</span><span class="token punctuation">(</span>result<span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-          location<span class="token punctuation">.</span><span class="token function">reload</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">1000</span><span class="token punctuation">)</span>
-
-      <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span><span class="token punctuation">)</span>
-  <span class="token punctuation">}</span></code></pre>
-<h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>我使用的是Jquery的ajax技术<br>其中：</p>
+                <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>因为疫情的原因,导致在家呆了两个月,也学习了两个月,在tomcat 的webapps目录下塞满了war包</p>
+<p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/imag/20200306094854.png" alt=""></p>
+<p>以下来介绍一下我的学习成果</p>
+<h2 id="Perfume商店"><a href="#Perfume商店" class="headerlink" title="Perfume商店"></a>Perfume商店</h2><p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/imag/20200306095312.png" alt=""></p>
+<p>香水商店,经过一次一次的升级,有三个版本,是技术推进的结果.</p>
+<p>三个版本概述:</p>
 <ol>
-<li>传输一些数据到CartServlet，在Servlet里面处理添加到购物车</li>
-<li>前台没有任何感受到改变，这就是异步请求的魅力</li>
-<li>处理完成，返回数据给前台，提示框提示是否添加购物车成功</li>
+<li>perfume是直接在jsp之中循环展示商品;</li>
+<li>perfume-2是新增了购物车的功能,这里学习到了ajax 局部刷新技术;</li>
+<li>perfume-3使用JSTL来简化繁琐的循环和数据的获取</li>
 </ol>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ol>
-<li>使用ajax技术，前台可以在发送请求的同时，继续其他的任务，提高用户体验。</li>
-<li>可以进行局部更新，减少刷新页面带来的流量消费，同时提高了页面的响应速度。</li>
+<p>链接:</p>
+<ol>
+<li><a href="http://47.115.33.215/perfume/" target="_blank" rel="noopener">http://47.115.33.215/perfume/</a></li>
+<li><a href="http://47.115.33.215/perfume-2/" target="_blank" rel="noopener">http://47.115.33.215/perfume-2/</a></li>
+<li><a href="http://47.115.33.215/perfume-3/" target="_blank" rel="noopener">http://47.115.33.215/perfume-3/</a></li>
 </ol>
+<h2 id="主页"><a href="#主页" class="headerlink" title="主页"></a>主页</h2><p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/imag/20200306100019.png" alt=""></p>
+<p>这个主页原本的打算是用来当个人博客用的,在后期写博客的时候发现了局限性,以至于博客迁移在这里.</p>
+<p>链接: <a href="http://47.115.33.215/" target="_blank" rel="noopener">http://47.115.33.215/</a></p>
+<h2 id="武汉加油项目"><a href="#武汉加油项目" class="headerlink" title="武汉加油项目"></a>武汉加油项目</h2><p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/imag/20200306100448.png" alt=""></p>
+<p>在疫情的之下,让我们为武汉人民加油,武汉加油,中国加油!</p>
+<p>链接: <a href="http://47.115.33.215/fighting-wuhan/" target="_blank" rel="noopener">http://47.115.33.215/fighting-wuhan/</a></p>
+<h2 id="水果商店"><a href="#水果商店" class="headerlink" title="水果商店"></a>水果商店</h2><p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/imag/20200306161742.png" alt=""></p>
+<p>总体来说跟perfume商店是差不多的,使用到了modal跟dao层,渐渐有mvc的味道了.</p>
+<p>链接: <a href="http://47.115.33.215/fruitProj2/" target="_blank" rel="noopener">http://47.115.33.215/fruitProj2/</a></p>
+<h2 id="生活商城"><a href="#生活商城" class="headerlink" title="生活商城"></a>生活商城</h2><p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/imag/20200306161905.png" alt=""></p>
+<p>这是最近这次实验报告的商城,有登录功能等,主要是用来理解request和response的功能和奥义.</p>
+<p>链接: <a href="http://47.115.33.215/market/index.jsp" target="_blank" rel="noopener">http://47.115.33.215/market/index.jsp</a></p>
+<h2 id="PicGo-Github-实现图床"><a href="#PicGo-Github-实现图床" class="headerlink" title="PicGo + Github 实现图床"></a>PicGo + Github 实现图床</h2><p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/img/20200306162516.png" alt=""></p>
+<p>微博图床无法使用之后,写博客的一片哀嚎.</p>
+<p>使用PicGO + Github 就是一套解决方案,中间采用了GitHub的CDN加速,避免了访问速度慢的缺点.</p>
+<h2 id="学习Linux"><a href="#学习Linux" class="headerlink" title="学习Linux"></a>学习Linux</h2><p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/img/20200306162553.png" alt=""></p>
+<p>自从领了新的云服务器,就去搞了去Ubuntu系统,在cmd式的交互下,安装tomcat,mysql等一些东西,还是有点快乐的.</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>以上便是这两个月的总结，学的不多，继续努力！fighting！</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -457,7 +469,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zachary.asia/2020/02/25/jquery+ajax+shi+xian+yi+bu+geng+xin/">https://zachary.asia/2020/02/25/jquery+ajax+shi+xian+yi+bu+geng+xin/</a>
+                    <a href="https://zachary.asia/2020/03/06/jin-liang-yue-de-xue-xi-cheng-guo/">https://zachary.asia/2020/03/06/jin-liang-yue-de-xue-xi-cheng-guo/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -495,12 +507,12 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/ajax/">
-                                    <span class="chip bg-color">ajax</span>
+                                <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%88%90%E6%9E%9C/">
+                                    <span class="chip bg-color">学习成果</span>
                                 </a>
                             
-                                <a href="/tags/Jquery/">
-                                    <span class="chip bg-color">Jquery</span>
+                                <a href="/tags/%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%A4%BA/">
+                                    <span class="chip bg-color">页面展示</span>
                                 </a>
                             
                         </div>
@@ -929,61 +941,59 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/02/27/shi+yong+hexo+chuang+jian+zi+ji+de+de+bo+ke/">
+                <a href="/2020/03/06/jin-liang-yue-de-xue-xi-cheng-guo/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="使用hexo创建自己的的博客">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="近两月的学习成果">
                         
-                        <span class="card-title">使用hexo创建自己的的博客</span>
+                        <span class="card-title">近两月的学习成果</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            什么是hexo?
-hexo 是快速、简洁且高效的博客框架,能够快速搭建博客.
+                            前言因为疫情的原因,导致在家呆了两个月,也学习了两个月,在tomcat 的webapps目录下塞满了war包
 
-官网: hexo
-安装hexo安装hexo是非常快速的.
-安装前提
-Node.js
-Git  
+以下来介绍一下我的学习成果
+Perfume商店
+香水商店,经过一次一次的升级,有三个版本,是技术推进的结果.
+三个版本概述:
 
-直接在官网下载最新版本安装即可  
-安装完成后,打开cmd 
 
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-02-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-06
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                    博客
+                            <a href="/categories/%E6%80%BB%E7%BB%93/" class="post-category">
+                                    总结
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%88%90%E6%9E%9C/">
+                        <span class="chip bg-color">学习成果</span>
                     </a>
                     
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">博客</span>
+                    <a href="/tags/%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%A4%BA/">
+                        <span class="chip bg-color">页面展示</span>
                     </a>
                     
                 </div>
@@ -997,32 +1007,41 @@ Git
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/02/25/git+de+jian+dan+shi+yong/">
+                <a href="/2020/02/29/chrome-devtools-xue-xi-bi-ji/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="git的简单使用">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Chrome-DevTools-学习笔记">
                         
-                        <span class="card-title">git的简单使用</span>
+                        <span class="card-title">Chrome-DevTools-学习笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            什么是Git   Git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。 [1]  Git 是 Linus Torvalds 为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件
-安装Git
+                            Chrome DevTools 快捷键
+打开最近关闭的状态：Ctrl + Shift + I  
+
+快速查看DOM的样式：Ctrl + Shift + C 
+
+快速进入Console：Ctrl + Shift + J  
+
+F12  
+
+
+
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-25
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-29
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
-                                    技术
+                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    笔记
                                 </a>
                             
                             
@@ -1032,8 +1051,16 @@ Git
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Git/">
-                        <span class="chip bg-color">Git</span>
+                    <a href="/tags/Chrome-DevTools/">
+                        <span class="chip bg-color">Chrome-DevTools</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%AC%94%E8%AE%B0/">
+                        <span class="chip bg-color">笔记</span>
+                    </a>
+                    
+                    <a href="/tags/%E8%B0%83%E8%AF%95/">
+                        <span class="chip bg-color">调试</span>
                     </a>
                     
                 </div>
