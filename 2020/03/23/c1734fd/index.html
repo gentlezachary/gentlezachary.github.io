@@ -375,7 +375,7 @@ groupId
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    770
+                    778
                 </div>
                 
 
@@ -465,12 +465,12 @@ groupId
 <p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/img/20200323122848.png" alt=""></p>
 <p>你会发现我们已经引入成功了</p>
 <h3 id="疑惑"><a href="#疑惑" class="headerlink" title="疑惑"></a>疑惑</h3><p>咦？就这？那他到底是从哪里来的jar包呢？</p>
-<p><a href="https://repo1.maven.org/" target="_blank" rel="noopener">https://repo1.maven.org/</a></p>
+<p>官方仓库：<a href="https://repo1.maven.org/" target="_blank" rel="noopener">https://repo1.maven.org/</a></p>
 <p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/img/20200323123310.png" alt=""></p>
 <p>这便是Maven的官方仓库，我们修改了镜像源，所以是国内阿里云的镜像(还是速度重要，以前不懂下了半天哈)。</p>
 <p>可是就算这样，我也不知道咋样引入才是正确的，而且这个网站这么多看起来眼花缭乱的，我都块晕了！</p>
 <p>哈哈！又要开始偷懒了！</p>
-<p><a href="https://mvnrepository.com/" target="_blank" rel="noopener">https://mvnrepository.com/</a></p>
+<p>查询地址：<a href="https://mvnrepository.com/" target="_blank" rel="noopener">https://mvnrepository.com/</a></p>
 <p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/img/20200323123539.png" alt=""></p>
 <p>以后你想引入什么jar包，就来这里搜索吧，简直就是一条龙服务了。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/img/20200323123708.png" alt=""></p>
@@ -482,14 +482,14 @@ groupId
 <h3 id="源码打包"><a href="#源码打包" class="headerlink" title="源码打包"></a>源码打包</h3><pre class=" language-text"><code class="language-text">mvn source:jar
 或
 mvn source:jar-no-fork</code></pre>
-<h2 id="打包项目"><a href="#打包项目" class="headerlink" title="打包项目"></a>打包项目</h2><p>打开IDEA的Terminal</p>
+<h2 id="打包项目"><a href="#打包项目" class="headerlink" title="打包项目"></a>打包项目</h2><p>打开<strong>IDEA</strong>的<strong>Terminal</strong></p>
 <pre><code>mvn clean package</code></pre><p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/img/20200323124217.png" alt=""></p>
 <p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/img/20200323124241.png" alt=""></p>
-<p>这时候项目本地会生成一个target目录</p>
+<p>这时候项目本地会生成一个<strong>target</strong>目录</p>
 <p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/img/20200323124321.png" alt=""></p>
-<p>这时候生成的jar包就跟我们从Maven仓库引入的是一个道理的。</p>
-<p>当我们配置完<strong>web.xml</strong>，就可以在pom.xml 里面配置</p>
-<pre><code>&lt;packaging&gt;war&lt;/packaging&gt;</code></pre><p>然后打包就会编程 <strong>.war</strong> 文件，可以部署到服务器tomcat上了。</p>
+<p>这时候生成的<strong>jar</strong>包就跟我们从<strong>Maven</strong>仓库引入的是一个道理的。</p>
+<p>当我们配置完<strong>web.xml</strong>，就可以在<strong>pom.xml</strong> 里面配置</p>
+<pre><code>&lt;packaging&gt;war&lt;/packaging&gt;</code></pre><p>然后打包就会编程 <strong>.war</strong> 文件，可以部署到<strong>tomcat</strong>服务器上了。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
