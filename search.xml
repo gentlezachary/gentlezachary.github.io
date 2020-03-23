@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Maven的安装</title>
+      <link href="/2020/03/23/ebcf160b/"/>
+      <url>/2020/03/23/ebcf160b/</url>
+      
+        <content type="html"><![CDATA[<h2 id="什么是Maven？"><a href="#什么是Maven？" class="headerlink" title="什么是Maven？"></a>什么是Maven？</h2><p>在近阶段的学习当中，我们在项目当中已经开始引入一些<strong>jar</strong>包，比如 <strong>mysql-connector-java-5.0.5-bin.jar</strong>、<strong>jstl-1.2.jar</strong>等，在以后的学习当中，我们会引入越来越多的<strong>jar</strong>包，那我们如何去找这些jar包，又如何去管理jar包的版本呢？</p><p>程序员就是喜欢偷懒，这就是<strong>Maven</strong>诞生的原因。<strong>Maven</strong>是一款帮助程序员构建项目的工具，我们只需要告诉Maven需要哪些Jar 包，它会帮助我们下载所有的Jar，极大提升开发效率。</p><h2 id="安装Maven"><a href="#安装Maven" class="headerlink" title="安装Maven"></a>安装Maven</h2><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>下载地址：</p><p><a href="https://maven.apache.org/download.cgi" target="_blank" rel="noopener">https://maven.apache.org/download.cgi</a></p><p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/img/20200323113439.png" alt=""></p><h3 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h3><p>下载完成后解压</p><p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/img/20200323113525.png" alt=""></p><h3 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h3><p>相信大家都是装好JDK的哈</p><h4 id="添加MAVEN-HOME"><a href="#添加MAVEN-HOME" class="headerlink" title="添加MAVEN_HOME"></a>添加MAVEN_HOME</h4><p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/img/20200323113739.png" alt=""></p><h4 id="添加bin目录到Path环境变量"><a href="#添加bin目录到Path环境变量" class="headerlink" title="添加bin目录到Path环境变量"></a>添加bin目录到Path环境变量</h4><p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/img/20200323114039.png" alt=""></p><h4 id="检查"><a href="#检查" class="headerlink" title="检查"></a>检查</h4><pre><code>mvn -v</code></pre><p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/img/20200323114134.png" alt=""></p><h2 id="配置Maven"><a href="#配置Maven" class="headerlink" title="配置Maven"></a>配置Maven</h2><p>在<strong>Maven</strong>目录下的<strong>/config/settings.xml</strong>里面配置</p><p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/img/20200323114616.png" alt=""></p><h3 id="配置本地仓库"><a href="#配置本地仓库" class="headerlink" title="配置本地仓库"></a>配置本地仓库</h3><p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/img/20200323114716.png" alt=""></p><h3 id="修改默认JDK版本"><a href="#修改默认JDK版本" class="headerlink" title="修改默认JDK版本"></a>修改默认JDK版本</h3><p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/img/20200323115035.png" alt=""></p><h3 id="配置国内加速源"><a href="#配置国内加速源" class="headerlink" title="配置国内加速源"></a>配置国内加速源</h3><p><img src="https://cdn.jsdelivr.net/gh/gentlezachary/images/img/20200323115112.png" alt=""></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Maven </tag>
+            
+            <tag> mvn </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>工具类合集</title>
       <link href="/2020/03/19/f8522569/"/>
       <url>/2020/03/19/f8522569/</url>
