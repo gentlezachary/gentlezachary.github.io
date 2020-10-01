@@ -4,18 +4,15 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Chrome-DevTools-学习笔记, HTML,CSS,JavaScript,JQuery,React,Vue.js等">
-    <meta name="description" content="Chrome DevTools 快捷键
-打开最近关闭的状态：Ctrl + Shift + I  
-
-快速查看DOM的样式：Ctrl + Shift + C 
-
-快速进入Console：Ctrl + Shift + J  
-
-F12  
-
-
-">
+    <meta name="keywords" content="js解析excel, HTML,CSS,JavaScript,JQuery,React,Vue.js等">
+    <meta name="description" content="解析上传的excel文件我使用的是vue开发页面，在命令行运行：
+npm install xlsx
+上传文件
+使用
+ &amp;lt;el-upload
+     class=&#34;upload-demo&#34;
+     action=&#34;#&#34;
+     r">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +20,7 @@ F12
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Chrome-DevTools-学习笔记 | Zachary</title>
+    <title>js解析excel | Zachary</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -206,12 +203,12 @@ F12
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Chrome-DevTools-学习笔记</h1>
+                    <h1 class="description center-align post-title">js解析excel</h1>
                 </div>
             </div>
         </div>
@@ -328,16 +325,12 @@ F12
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Chrome-DevTools/">
-                                <span class="chip bg-color">Chrome-DevTools</span>
+                            <a href="/tags/js/">
+                                <span class="chip bg-color">js</span>
                             </a>
                         
-                            <a href="/tags/%E7%AC%94%E8%AE%B0/">
-                                <span class="chip bg-color">笔记</span>
-                            </a>
-                        
-                            <a href="/tags/%E8%B0%83%E8%AF%95/">
-                                <span class="chip bg-color">调试</span>
+                            <a href="/tags/excel/">
+                                <span class="chip bg-color">excel</span>
                             </a>
                         
                     </div>
@@ -348,8 +341,8 @@ F12
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
-                                笔记
+                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                技术
                             </a>
                         
                     </div>
@@ -361,28 +354,28 @@ F12
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-02-29
+                    2020-10-01
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-08
+                    2020-10-02
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    166
+                    509
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
 
@@ -398,24 +391,83 @@ F12
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Chrome-DevTools-快捷键"><a href="#Chrome-DevTools-快捷键" class="headerlink" title="Chrome DevTools 快捷键"></a>Chrome DevTools 快捷键</h2><ol>
-<li><p>打开最近关闭的状态：<code>Ctrl + Shift + I</code>  </p>
-</li>
-<li><p>快速查看<strong>DOM</strong>的样式：<code>Ctrl + Shift + C</code> </p>
-</li>
-<li><p>快速进入<strong>Console</strong>：<code>Ctrl + Shift + J</code>  </p>
-</li>
-<li><p><code>F12</code>  </p>
-</li>
-</ol>
-<h2 id="在Console中访问页面元素"><a href="#在Console中访问页面元素" class="headerlink" title="在Console中访问页面元素"></a>在Console中访问页面元素</h2><ol>
-<li><p>根据元素的<strong>标签</strong>,<strong>id</strong>,<strong>class</strong>等，在<strong>console</strong>中使用 <code>document.querySelectorAll</code> 方法来获取  </p>
-</li>
-<li><p>在<strong>Elements</strong>中选择你想要的<strong>DOM</strong>，会出现一个 <code>$0</code> 的后缀，在<strong>Console</strong>中填写 <code>$0</code> 即可获取到<strong>DOM</strong>.  </p>
-</li>
-<li><p>在<strong>Elements</strong>中选择你想要的<strong>DOM</strong>,右键选择 <code>Copy JS path</code>.  </p>
-</li>
-</ol>
+                <h2 id="解析上传的excel文件"><a href="#解析上传的excel文件" class="headerlink" title="解析上传的excel文件"></a>解析上传的excel文件</h2><p>我使用的是vue开发页面，在命令行运行：</p>
+<pre class=" language-javascript"><code class="language-javascript">npm install xlsx</code></pre>
+<p>上传文件</p>
+<p>使用<el-upload></el-upload></p>
+<pre class=" language-javascript"><code class="language-javascript"> <span class="token operator">&lt;</span>el<span class="token operator">-</span>upload
+     <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"upload-demo"</span>
+     action<span class="token operator">=</span><span class="token string">"#"</span>
+     ref<span class="token operator">=</span><span class="token string">"upload"</span>
+     <span class="token punctuation">:</span>on<span class="token operator">-</span>change<span class="token operator">=</span><span class="token string">"upload"</span>
+     accept<span class="token operator">=</span><span class="token string">".xls,.xlsx"</span>
+     <span class="token punctuation">:</span>show<span class="token operator">-</span>file<span class="token operator">-</span>list<span class="token operator">=</span><span class="token string">"false"</span>
+     <span class="token punctuation">:</span>auto<span class="token operator">-</span>upload<span class="token operator">=</span><span class="token string">"false"</span><span class="token operator">></span>
+     <span class="token operator">&lt;</span>el<span class="token operator">-</span>button  type<span class="token operator">=</span><span class="token string">"primary"</span><span class="token operator">></span>导入<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
+ <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>upload<span class="token operator">></span></code></pre>
+<p>导入依赖</p>
+<pre class=" language-javascript"><code class="language-javascript">    <span class="token keyword">import</span> XLSX <span class="token keyword">from</span> <span class="token string">'xlsx'</span></code></pre>
+<p>上传方法</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token function">upload</span><span class="token punctuation">(</span>file<span class="token punctuation">,</span>fileList<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token comment" spellcheck="true">// console.log("file",file);</span>
+    <span class="token comment" spellcheck="true">// console.log("fileList",fileList);</span>
+    <span class="token keyword">let</span> files <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token number">0</span><span class="token punctuation">:</span>file<span class="token punctuation">.</span>raw<span class="token punctuation">}</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">readExcel1</span><span class="token punctuation">(</span>files<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token punctuation">}</span>
+<span class="token function">readExcel1</span><span class="token punctuation">(</span>files<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token comment" spellcheck="true">//表格导入</span>
+    <span class="token keyword">var</span> that <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">;</span>
+    <span class="token comment" spellcheck="true">// console.log(files);</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>files<span class="token punctuation">.</span>length<span class="token operator">&lt;=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment" spellcheck="true">//如果没有文件名</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token regex">/\.(xls|xlsx)$/</span><span class="token punctuation">.</span><span class="token function">test</span><span class="token punctuation">(</span>files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>name<span class="token punctuation">.</span><span class="token function">toLowerCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>$message<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token string">'上传格式不正确，请上传xls或者xlsx格式'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">const</span> fileReader <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FileReader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    fileReader<span class="token punctuation">.</span>onload <span class="token operator">=</span> <span class="token punctuation">(</span>ev<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+        <span class="token keyword">try</span> <span class="token punctuation">{</span>
+            <span class="token keyword">const</span> data <span class="token operator">=</span> ev<span class="token punctuation">.</span>target<span class="token punctuation">.</span>result<span class="token punctuation">;</span>
+
+            <span class="token keyword">const</span> workbook <span class="token operator">=</span> XLSX<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span>data<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+                type<span class="token punctuation">:</span> <span class="token string">'binary'</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">const</span> wsname <span class="token operator">=</span> workbook<span class="token punctuation">.</span>SheetNames<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//取第一张表</span>
+            <span class="token keyword">const</span> ws <span class="token operator">=</span> XLSX<span class="token punctuation">.</span>utils<span class="token punctuation">.</span><span class="token function">sheet_to_json</span><span class="token punctuation">(</span>workbook<span class="token punctuation">.</span>Sheets<span class="token punctuation">[</span>wsname<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//生成json表格内容</span>
+            <span class="token comment" spellcheck="true">// console.log(ws);</span>
+            <span class="token comment" spellcheck="true">// that.peopleArr = [];//清空接收数据</span>
+            <span class="token comment" spellcheck="true">// if(that.peopleArr.length == 1 &amp;&amp; that.peopleArr[0].roleName == "" &amp;&amp; that.peopleArr[0].enLine == ""){</span>
+            <span class="token comment" spellcheck="true">//     that.peopleArr = [];</span>
+            <span class="token comment" spellcheck="true">// }</span>
+            <span class="token comment" spellcheck="true">//重写数据</span>
+            <span class="token keyword">try</span><span class="token punctuation">{</span>
+
+            <span class="token punctuation">}</span><span class="token keyword">catch</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token keyword">this</span><span class="token punctuation">.</span>$refs<span class="token punctuation">.</span>upload<span class="token punctuation">.</span>value <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+
+        <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span><span class="token class-name">e</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    fileReader<span class="token punctuation">.</span><span class="token function">readAsBinaryString</span><span class="token punctuation">(</span>files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>使用FileReader 读取文件二进制流，在使用XLSX插件的read方法解析文件流，使用插件的工具类 转换excel 内容为json格式。注意以上是使用二进制流的方式来解析，同样也能使用text流解析，使用方法如下：</p>
+<h2 id="解析服务器或者本地的excel文件"><a href="#解析服务器或者本地的excel文件" class="headerlink" title="解析服务器或者本地的excel文件"></a>解析服务器或者本地的excel文件</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">async</span>  <span class="token function">getExcel</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>data<span class="token punctuation">:</span> res<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$http<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'name.xls'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> workbook <span class="token operator">=</span> XLSX<span class="token punctuation">.</span><span class="token function">read</span><span class="token punctuation">(</span>res<span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">'string'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> wsname <span class="token operator">=</span> workbook<span class="token punctuation">.</span>SheetNames<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//取第一张表</span>
+    <span class="token keyword">const</span> ws <span class="token operator">=</span> XLSX<span class="token punctuation">.</span>utils<span class="token punctuation">.</span><span class="token function">sheet_to_json</span><span class="token punctuation">(</span>workbook<span class="token punctuation">.</span>Sheets<span class="token punctuation">[</span>wsname<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment" spellcheck="true">//生成json表格内容</span>
+    <span class="token keyword">return</span> ws<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre>
+<p>使用axios获取服务器端的excel文件的字符流，XLSX read 方法对应的type也应换为string类型，使用二进制流将会乱码，如果看不明白，也可自己吧解析完成的workbook打印到控制台，观察它的结构就能得到答案。</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -459,7 +511,7 @@ F12
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zachary.asia/2020/02/29/a28fe30f/">https://zachary.asia/2020/02/29/a28fe30f/</a>
+                    <a href="https://zachary.asia/2020/10/01/6d3fc4ff/">https://zachary.asia/2020/10/01/6d3fc4ff/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -497,16 +549,12 @@ F12
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Chrome-DevTools/">
-                                    <span class="chip bg-color">Chrome-DevTools</span>
+                                <a href="/tags/js/">
+                                    <span class="chip bg-color">js</span>
                                 </a>
                             
-                                <a href="/tags/%E7%AC%94%E8%AE%B0/">
-                                    <span class="chip bg-color">笔记</span>
-                                </a>
-                            
-                                <a href="/tags/%E8%B0%83%E8%AF%95/">
-                                    <span class="chip bg-color">调试</span>
+                                <a href="/tags/excel/">
+                                    <span class="chip bg-color">excel</span>
                                 </a>
                             
                         </div>
@@ -935,57 +983,59 @@ F12
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/06/1241336/">
+                <a href="/2020/10/01/6d3fc4ff/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="近两月的学习成果">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="js解析excel">
                         
-                        <span class="card-title">近两月的学习成果</span>
+                        <span class="card-title">js解析excel</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            前言因为疫情的原因,导致在家呆了两个月,也学习了两个月,在tomcat 的webapps目录下塞满了war包
-
-以下来介绍一下我的学习成果
-Perfume商店
-香水商店,经过一次一次的升级,有三个版本,是技术推进的结果.
-三个版本概述:
-
-
+                            解析上传的excel文件我使用的是vue开发页面，在命令行运行：
+npm install xlsx
+上传文件
+使用
+ &lt;el-upload
+     class="upload-demo"
+     action="#"
+     r
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-06
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%80%BB%E7%BB%93/" class="post-category">
-                                    总结
+                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                    技术
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%AD%A6%E4%B9%A0%E6%88%90%E6%9E%9C/">
-                        <span class="chip bg-color">学习成果</span>
+                    <a href="/tags/js/">
+                        <span class="chip bg-color">js</span>
                     </a>
                     
-                    <a href="/tags/%E9%A1%B5%E9%9D%A2%E5%B1%95%E7%A4%BA/">
-                        <span class="chip bg-color">页面展示</span>
+                    <a href="/tags/excel/">
+                        <span class="chip bg-color">excel</span>
                     </a>
                     
                 </div>
@@ -999,42 +1049,45 @@ Perfume商店
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/02/27/35e27549/">
+                <a href="/2020/03/23/c1734fd/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="使用hexo创建自己的博客">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Maven的使用">
                         
-                        <span class="card-title">使用hexo创建自己的博客</span>
+                        <span class="card-title">Maven的使用</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            什么是hexo?
-hexo 是快速、简洁且高效的博客框架,能够快速搭建博客.
+                            IDEA 配置 Maven打开Settings for New Projects,配置Maven
 
-官网: hexo
-安装hexo安装hexo是非常快速的.
-安装前提
-Node.js
-Git  
 
-直接在官网下载最新版本安装即可  
-安装完成后,打开cmd 
+使用Maven新建Maven项目
 
+
+
+
+节点
+描述
+
+
+
+groupId
+这是项目组的编号，这在组织或项目中通常是独一无二的。 例如，一
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-02-27
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-23
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E5%8D%9A%E5%AE%A2/" class="post-category">
-                                    博客
+                            <a href="/categories/%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    笔记
                                 </a>
                             
                             
@@ -1044,12 +1097,12 @@ Git
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
+                    <a href="/tags/Maven/">
+                        <span class="chip bg-color">Maven</span>
                     </a>
                     
-                    <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                        <span class="chip bg-color">博客</span>
+                    <a href="/tags/mvn/">
+                        <span class="chip bg-color">mvn</span>
                     </a>
                     
                 </div>
