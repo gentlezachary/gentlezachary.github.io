@@ -367,7 +367,7 @@ npm install xlsx
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    522
+                    523
                 </div>
                 
 
@@ -455,7 +455,7 @@ npm install xlsx
     <span class="token punctuation">}</span><span class="token punctuation">;</span>
     fileReader<span class="token punctuation">.</span><span class="token function">readAsBinaryString</span><span class="token punctuation">(</span>files<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre>
-<p>使用FileReader 读取文件二进制流，在使用XLSX插件的read方法解析文件流，使用插件的工具类 转换excel 内容为json格式。注意以上是使用二进制流的方式来解析，同样也能使用text流解析，使用方法如下：</p>
+<p>使用FileReader 读取文件二进制流，在使用XLSX插件的read方法解析文件流，使用插件的工具类 转换excel 内容为json格式。注意以上是使用二进制流的方式来解析，同样也能使用字符流解析，使用方法如下：</p>
 <h2 id="解析服务器或者本地的excel文件"><a href="#解析服务器或者本地的excel文件" class="headerlink" title="解析服务器或者本地的excel文件"></a>解析服务器或者本地的excel文件</h2><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">async</span>  <span class="token function">getExcel</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token keyword">const</span> <span class="token punctuation">{</span>data<span class="token punctuation">:</span> res<span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$http<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'name.xls'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
 
