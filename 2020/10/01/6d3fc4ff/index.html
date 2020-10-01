@@ -5,14 +5,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="js解析excel, HTML,CSS,JavaScript,JQuery,React,Vue.js等">
-    <meta name="description" content="解析上传的excel文件我使用的是vue开发页面，在命令行运行：
+    <meta name="description" content="依赖安装和导入我使用的是vue开发页面，在命令行运行：
 npm install xlsx
-上传文件
-使用
- &amp;lt;el-upload
-     class=&#34;upload-demo&#34;
-     action=&#34;#&#34;
-     r">
+导入依赖
+    import XLSX from &#39;xlsx&#39;
+解析上传的excel文件上传文件
+使用Element上传组件
+ &amp;lt;el-upl">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -368,7 +367,7 @@ npm install xlsx
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    509
+                    522
                 </div>
                 
 
@@ -391,10 +390,12 @@ npm install xlsx
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="解析上传的excel文件"><a href="#解析上传的excel文件" class="headerlink" title="解析上传的excel文件"></a>解析上传的excel文件</h2><p>我使用的是vue开发页面，在命令行运行：</p>
+                <h2 id="依赖安装和导入"><a href="#依赖安装和导入" class="headerlink" title="依赖安装和导入"></a>依赖安装和导入</h2><p>我使用的是vue开发页面，在命令行运行：</p>
 <pre class=" language-javascript"><code class="language-javascript">npm install xlsx</code></pre>
-<p>上传文件</p>
-<p>使用<el-upload></el-upload></p>
+<p>导入依赖</p>
+<pre class=" language-javascript"><code class="language-javascript">    <span class="token keyword">import</span> XLSX <span class="token keyword">from</span> <span class="token string">'xlsx'</span></code></pre>
+<h2 id="解析上传的excel文件"><a href="#解析上传的excel文件" class="headerlink" title="解析上传的excel文件"></a>解析上传的excel文件</h2><p>上传文件</p>
+<p>使用Element上传组件</p>
 <pre class=" language-javascript"><code class="language-javascript"> <span class="token operator">&lt;</span>el<span class="token operator">-</span>upload
      <span class="token keyword">class</span><span class="token operator">=</span><span class="token string">"upload-demo"</span>
      action<span class="token operator">=</span><span class="token string">"#"</span>
@@ -405,8 +406,6 @@ npm install xlsx
      <span class="token punctuation">:</span>auto<span class="token operator">-</span>upload<span class="token operator">=</span><span class="token string">"false"</span><span class="token operator">></span>
      <span class="token operator">&lt;</span>el<span class="token operator">-</span>button  type<span class="token operator">=</span><span class="token string">"primary"</span><span class="token operator">></span>导入<span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>button<span class="token operator">></span>
  <span class="token operator">&lt;</span><span class="token operator">/</span>el<span class="token operator">-</span>upload<span class="token operator">></span></code></pre>
-<p>导入依赖</p>
-<pre class=" language-javascript"><code class="language-javascript">    <span class="token keyword">import</span> XLSX <span class="token keyword">from</span> <span class="token string">'xlsx'</span></code></pre>
 <p>上传方法</p>
 <pre class=" language-javascript"><code class="language-javascript"><span class="token function">upload</span><span class="token punctuation">(</span>file<span class="token punctuation">,</span>fileList<span class="token punctuation">)</span><span class="token punctuation">{</span>
     <span class="token comment" spellcheck="true">// console.log("file",file);</span>
@@ -1000,14 +999,13 @@ npm install xlsx
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            解析上传的excel文件我使用的是vue开发页面，在命令行运行：
+                            依赖安装和导入我使用的是vue开发页面，在命令行运行：
 npm install xlsx
-上传文件
-使用
- &lt;el-upload
-     class="upload-demo"
-     action="#"
-     r
+导入依赖
+    import XLSX from 'xlsx'
+解析上传的excel文件上传文件
+使用Element上传组件
+ &lt;el-upl
                         
                     </div>
                     <div class="publish-info">
